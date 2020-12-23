@@ -32,8 +32,8 @@ function App() {
       <p className={textStyle}>Welcome to the blog of <span className="unknown">unknown</span></p>
       <div className="container">
         <div className="row">
-          <div className={`col-sm-${colSize}`}>{ProductList}</div>
-          <div className={`col-sm-${colSize}`}>{Product}
+          <div className={`col-md-${colSize}`}>{ProductList}</div>
+          <div className={`col-md-${colSize}`}>{Product}
           <List></List>
           </div>
         </div>
