@@ -1,23 +1,19 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 
-class List extends Component {
+const List = () => {
 
-    state ={
-        listItems : ["Dapibus ac facilisis in","Morbi leo risus","Porta ac consectetur ac","Vestibulum at eros","Cras justo odio"],
-    }
-
-    render(){
+   const [data, setData] = useState(["Dapibus ac facilisis in","Morbi leo risus","Porta ac consectetur ac","Vestibulum at eros","Cras justo odio"])
         return(
             <ul className="list-group">
-            {this.state.listItems.map(listItem => (
+            {data.map(listItem => (
                 <li class="list-group-item d-flex justify-content-between align-items-center">{listItem}
                     <span class="badge bg-dark text-light">14</span>
                 </li>
             ))}
             </ul>
         )
-    }
     
 }
+
 
 export default List
