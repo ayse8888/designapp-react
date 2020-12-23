@@ -1,17 +1,23 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-const List =({id}) => {
-    return(
-        <div className="list-group">
-            <button type="button" className="list-group-item list-group-item-action active" aria-current="true">
-                Cras justo odio
-            </button>
-            <button type="button" className="list-group-item list-group-item-action">Dapibus ac facilisis in</button>
-            <button type="button" className="list-group-item list-group-item-action">Morbi leo risus</button>
-            <button type="button" className="list-group-item list-group-item-action">Porta ac consectetur ac</button>
-            <button type="button" className="list-group-item list-group-item-action">Vestibulum at eros</button>
-        </div>
-    )
+class List extends Component {
+
+    state ={
+        listItems : ["Dapibus ac facilisis in","Morbi leo risus","Porta ac consectetur ac","Vestibulum at eros","Cras justo odio"],
+    }
+
+    render(){
+        return(
+            <ul className="list-group">
+            {this.state.listItems.map(listItem => (
+                <li class="list-group-item d-flex justify-content-between align-items-center">{listItem}
+                    <span class="badge bg-dark rounded-pill">14</span>
+                </li>
+            ))}
+            </ul>
+        )
+    }
+    
 }
 
 export default List

@@ -5,7 +5,6 @@ import {data} from './datas/data'
 import Card from './components/Card'
 import { otherdata } from './datas/otherdata';
 import List from './components/List'
-import {listdata} from './datas/listdata'
 import './components/style.css'
 
 
@@ -26,11 +25,6 @@ function App() {
     </div>
   ));
 
-  const Listdata = listdata.map(item =>(
-    <div>
-      <List id={item.id}/>
-    </div>
-  ));
 
   return (
     <div>
@@ -39,7 +33,9 @@ function App() {
       <div className="container">
         <div className="row">
           <div className={`col-sm-${colSize}`}>{ProductList}</div>
-          <div className={`col-sm-${colSize}`}>{Product}{Listdata}</div>
+          <div className={`col-sm-${colSize}`}>{Product}
+          <List></List>
+          </div>
         </div>
       </div>
     </div>
