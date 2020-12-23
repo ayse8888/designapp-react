@@ -11,7 +11,7 @@ class List extends Component {
             <ul className="list-group">
             {this.state.listItems.map(listItem => (
                 <li class="list-group-item d-flex justify-content-between align-items-center">{listItem}
-                    <span class="badge bg-dark rounded-pill">14</span>
+                    <span class="badge bg-dark text-light">14</span>
                 </li>
             ))}
             </ul>
