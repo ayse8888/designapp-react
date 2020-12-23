@@ -1,11 +1,11 @@
 // import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import React, {useState,useEffect} from 'react'
-import {data} from './components/data'
+import {data} from './datas/data'
 import Card from './components/Card'
-import { otherdata } from './components/otherdata';
+import { otherdata } from './datas/otherdata';
 import List from './components/List'
-import {listdata} from './components/listdata'
+import {listdata} from './datas/listdata'
 import './components/style.css'
 
 
